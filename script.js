@@ -27,6 +27,15 @@
         { name: '???', username: '@???', role: '???', tiktok: 'https://www.tiktok.com', initial: '?', photo: 'images/admin6.png' }
     ];
 
+    const contacts = [
+        { platform: 'TikTok', username: '@kasugano.resmi', link: 'https://www.tiktok.com/@kasugano.official', icon: 'fab fa-tiktok' },
+        { platform: 'TikTok', username: '@kasugano.store', link: 'https://www.tiktok.com/@kasugano.store', icon: 'fab fa-tiktok' },
+        { platform: 'Instagram', username: '@kasugano.keluarga', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
+        { platform: 'Instagram', username: '@kasuganostore', link: 'https://www.instagram.com/kasuganostore', icon: 'fab fa-instagram' },
+        { platform: 'WhatsApp', username: '+62 852-3240-6495', link: 'https://wa.me/6285232406495', icon: 'fab fa-whatsapp' },
+        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'mailto:kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
+    ];
+
     // ===== ELEMENTS =====
     const navbar = document.getElementById('navbar');
     const navItems = document.querySelectorAll('.nav-item');
@@ -96,7 +105,7 @@
         });
     }
 
-    // ===== RENDER ADMINS (URUTAN DIPERBAIKI) =====
+    // ===== RENDER ADMINS =====
     const adminTrack = document.getElementById('adminTrack');
     adminTrack.innerHTML = '';
     
@@ -117,13 +126,40 @@
         adminTrack.appendChild(card);
     });
 
-    // ===== CAROUSEL =====
-    const carouselWrapper = document.getElementById('adminCarousel');
+    // ===== RENDER CONTACTS (CAROUSEL) =====
+    const contactTrack = document.getElementById('contactTrack');
+    contactTrack.innerHTML = '';
+    
+    contacts.forEach(contact => {
+        const card = document.createElement('a');
+        card.href = contact.link;
+        card.target = '_blank';
+        card.className = 'contact-card';
+        card.innerHTML = `
+            <i class="${contact.icon}"></i>
+            <h3>${contact.platform}</h3>
+            <span>${contact.username}</span>
+        `;
+        contactTrack.appendChild(card);
+    });
+
+    // ===== CAROUSEL NAVIGATION =====
+    // Admin carousel
+    const adminCarousel = document.getElementById('adminCarousel');
     document.getElementById('carouselPrev').addEventListener('click', () => {
-        carouselWrapper.scrollBy({ left: -300, behavior: 'smooth' });
+        adminCarousel.scrollBy({ left: -300, behavior: 'smooth' });
     });
     document.getElementById('carouselNext').addEventListener('click', () => {
-        carouselWrapper.scrollBy({ left: 300, behavior: 'smooth' });
+        adminCarousel.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    // Contact carousel
+    const contactCarousel = document.getElementById('contactCarousel');
+    document.getElementById('contactPrev').addEventListener('click', () => {
+        contactCarousel.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    document.getElementById('contactNext').addEventListener('click', () => {
+        contactCarousel.scrollBy({ left: 300, behavior: 'smooth' });
     });
 
     // ===== SEARCH =====
@@ -249,12 +285,15 @@
         });
     }
 
-    // ===== SCROLL REVEAL ANIMATION (DIPERBAIKI) =====
+    // ===== SCROLL REVEAL ANIMATION - BISA DIULANG =====
     const revealSections = document.querySelectorAll('section');
+    
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('revealed');
+            } else {
+                entry.target.classList.remove('revealed');
             }
         });
     }, { threshold: 0.15, rootMargin: '0px' });

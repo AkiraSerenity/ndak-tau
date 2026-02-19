@@ -66,7 +66,7 @@ body::after {
 ::-webkit-scrollbar-track { background: #1c1326; }
 ::-webkit-scrollbar-thumb { background: #c47af0; border-radius: 10px; }
 
-/* ===== NAVBAR (FLUID) ===== */
+/* ===== NAVBAR ===== */
 .navbar-modern {
     position: fixed;
     top: 2%;
@@ -586,6 +586,7 @@ section:not(.revealed) {
     outline: none;
 }
 
+/* ===== CAROUSEL STYLES (untuk admin & contact) ===== */
 .carousel-container {
     position: relative;
     margin: 2rem 0;
@@ -634,6 +635,7 @@ section:not(.revealed) {
     box-shadow: var(--shadow-pink-soft);
 }
 
+/* Admin Cards */
 .admin-card {
     background: rgba(32, 16, 50, 0.9);
     border: 1.5px solid #c97aff;
@@ -718,45 +720,60 @@ section:not(.revealed) {
     box-shadow: var(--shadow-pink-soft);
 }
 
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
-    justify-content: center;
-    margin: 3rem 0;
+/* ===== CONTACT CAROUSEL CARDS (tanpa background, border, radius) ===== */
+.contact-carousel .carousel-track {
+    gap: 2rem;
 }
 
-.contact-item {
-    background: rgba(28, 14, 45, 0.8);
-    border: 1px solid #ff95d0;
-    border-radius: 16px;
-    padding: 1.2rem 0.8rem;
+.contact-card {
+    width: 200px;
+    flex-shrink: 0;
     text-align: center;
-    text-decoration: none;
     color: white;
-    width: calc(33.333% - 0.8rem);
-    min-width: 200px;
-    max-width: 250px;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    padding: 0.5rem;
     transition: all 0.2s ease;
+    /* Tanpa background, border, border-radius */
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
-.contact-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 25px -8px #d59dff;
+.contact-card:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 15px #ff69c2;
 }
 
-.contact-item i {
-    font-size: 2.2rem;
+.contact-card i {
+    font-size: 3rem;
     background: linear-gradient(145deg, #ff9ae0, #c07aff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin-bottom: 0.3rem;
 }
 
+.contact-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.contact-card span {
+    font-size: 0.9rem;
+    color: #ffb0e6;
+    background: transparent;
+    border: none;
+    padding: 0;
+    word-break: break-word;
+}
+
+/* ===== MODAL ===== */
 .modal {
     display: none;
     position: fixed;
@@ -879,6 +896,7 @@ section:not(.revealed) {
     box-shadow: var(--shadow-pink-soft);
 }
 
+/* ===== LOADING SKELETON ===== */
 .skeleton {
     background: linear-gradient(90deg, #2a1d3a 25%, #3f2b55 50%, #2a1d3a 75%);
     background-size: 200% 100%;
@@ -899,6 +917,7 @@ section:not(.revealed) {
     pointer-events: none;
 }
 
+/* ===== FOOTER ===== */
 .footer {
     text-align: center;
     padding: 2rem 0;
@@ -968,29 +987,34 @@ section:not(.revealed) {
         width: calc(33.333% - 0.7rem);
     }
     
-    .contact-item {
-        width: calc(50% - 0.6rem);
-    }
-    
-    .together-text {
-        font-size: 1.5rem;
-    }
-    
-    .together-sub {
-        font-size: 1rem;
-    }
-    
     .section-title {
         font-size: 1.8rem;
     }
     
-    /* Hilangkan tombol navigasi carousel di HP (sesuai foto 1) */
+    /* Hilangkan tombol navigasi carousel di HP */
     .carousel-nav {
         display: none;
     }
     
     .carousel-wrapper {
         padding: 0.5rem 0;
+    }
+    
+    /* Contact cards tetap tanpa background di HP */
+    .contact-card {
+        width: 160px;
+    }
+    
+    .contact-card i {
+        font-size: 2.5rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-card span {
+        font-size: 0.8rem;
     }
 }
 
@@ -1026,11 +1050,6 @@ section:not(.revealed) {
     
     .member-card {
         width: calc(50% - 0.5rem);
-    }
-    
-    .contact-item {
-        width: 100%;
-        max-width: 280px;
     }
     
     .el-familia-text {
@@ -1071,6 +1090,14 @@ section:not(.revealed) {
         height: 100px;
     }
     
+    .contact-card {
+        width: 140px;
+    }
+    
+    .contact-card i {
+        font-size: 2.2rem;
+    }
+    
     .modal-content {
         padding: 1.5rem 1.2rem;
     }
@@ -1102,5 +1129,21 @@ section:not(.revealed) {
     
     .logo-text {
         font-size: 1.2rem;
+    }
+    
+    .contact-card {
+        width: 120px;
+    }
+    
+    .contact-card i {
+        font-size: 2rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-card span {
+        font-size: 0.7rem;
     }
 }
