@@ -15,7 +15,8 @@
         { name: 'Qwentty', username: '@qwentty.ft', tiktok: 'https://www.tiktok.com/@qwenty.ft', initial: 'Q', photo: 'images/member12.jpg', quote: 'Preset dan filter hanyalah alat, yang utama adalah hati.' },
         { name: 'Akira', username: '@akira.imut', tiktok: 'https://www.tiktok.com/@akiraa.imut', initial: 'A', photo: 'images/member13.jpg', quote: 'Imut boleh, tetapi skill jangan ditawar.' },
         { name: 'Dree', username: '@daktau_256', tiktok: 'https://www.tiktok.com/@daktau_256', initial: 'D', photo: 'images/member14.jpg', quote: 'Jangan takut salah, karena dari salah kita belajar.' },
-        { name: 'Zunda', username: '@shaglenv02y', tiktok: 'https://www.tiktok.com/@shaglenv02y', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup itu seperti game, teruslah maju dan level up!' }
+        { name: 'Zunda', username: '@shaglenv02y', tiktok: 'https://www.tiktok.com/@shaglenv02y', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup itu seperti game, teruslah maju dan level up!' },
+        { name: 'Yushaa Von Khaslana', username: '@kachusyaa', tiktok: 'https://www.tiktok.com/@kachusyaa?_r=1&_t=ZS-943UkIGrPbZ', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup seperti larry!' }
     ];
 
     const admins = [
@@ -23,7 +24,7 @@
         { name: 'Sora', username: '@kasugano_sora52', role: 'Pemilik & Pendiri', tiktok: 'https://www.tiktok.com/@kasugano.rora', initial: 'S', photo: 'images/admin2.jpg' },
         { name: 'Haruka', username: '@kasugano_harukaa', role: 'Pemilik', tiktok: 'https://www.tiktok.com/@kasugano.harukaa', initial: 'H', photo: 'images/admin3.jpg' },
         { name: 'Zero', username: '@zero.znzx', role: 'Admin', tiktok: 'https://www.tiktok.com/@zero.znzx', initial: 'Z', photo: 'images/admin4.jfif' },
-        { name: '???', username: '@???', role: '???', tiktok: 'https://www.tiktok.com', initial: '?', photo: 'images/admin5.png' },
+        { name: 'Serlina', username: '@diiputraa28_', role: 'Admin', tiktok: 'https://www.tiktok.com/@diiputraa28_?_r=1&_t=ZS-943fWknNM6m', initial: 'S', photo: 'images/admin5.png' },
         { name: '???', username: '@???', role: '???', tiktok: 'https://www.tiktok.com', initial: '?', photo: 'images/admin6.png' }
     ];
 
