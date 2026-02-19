@@ -1,22 +1,22 @@
 (function() {
     // ===== DATA LENGKAP =====
     const members = [
-        { name: 'Gery', username: '@gerysenwith_lapiskeju', tiktok: 'https://www.tiktok.com/@gerysenwith_lapiskeju', initial: 'G', photo: 'images/member1.jpg', quote: 'Hidup itu seperti mengedit, butuh cut yang tepat. Terus berkarya dan jangan pernah menyerah!' },
-        { name: 'Rora', username: '@roraxml', tiktok: 'https://www.tiktok.com/@kasugano_sora87', initial: 'S', photo: 'images/member2.jpeg', quote: 'Bersama teman, anime lebih seru. Mari kita nikmati setiap momen bersama.' },
-        { name: 'Izabella', username: '@queen.izabellaz', tiktok: 'https://www.tiktok.com/@queen.izabellaz', initial: 'Q', photo: 'images/member3.jpeg', quote: 'Jadilah dirimu sendiri, dunia akan menghargaimu apa adanya.' },
-        { name: 'Erie', username: '@kasugano_erie', tiktok: 'https://www.tiktok.com/@kasugano_erie', initial: 'E', photo: 'images/member4.jpg', quote: 'Kreativitas adalah batas imajinasi yang tak terhingga.' },
-        { name: 'Fuyi', username: '@fuyii_npc', tiktok: 'https://www.tiktok.com/@fuyii_npc', initial: 'F', photo: 'images/member5.png', quote: 'Game mengajarkan kita strategi, teman mengajarkan kita kebersamaan.' },
+        { name: 'Gery', username: '@gerysenwith_lapiskeju', tiktok: 'https://www.tiktok.com/@gerysenwith_lapiskeju', initial: 'G', photo: 'images/member1.jpg', quote: 'Kamu rimuru bukan?' },
+        { name: 'Rora', username: '@roraxml', tiktok: 'https://www.tiktok.com/@kasugano_sora87', initial: 'S', photo: 'images/member2.jpeg', quote: 'Aku mah raja' },
+        { name: 'Izabella', username: '@queen.izabellaz', tiktok: 'https://www.tiktok.com/@queen.izabellaz', initial: 'Q', photo: 'images/member3.jpeg', quote: 'Mending turu' },
+        { name: 'Erie', username: '@kasugano_erie', tiktok: 'https://www.tiktok.com/@kasugano_erie', initial: 'E', photo: 'images/member4.jpg', quote: 'Gw butuh uang!!!' },
+        { name: 'Fuyi', username: '@fuyii_npc', tiktok: 'https://www.tiktok.com/@fuyii_npc', initial: 'F', photo: 'images/member5.png', quote: 'Ngapain tidur kalo bangun lagi?' },
         { name: 'Ezan', username: '@ezan_xd', tiktok: 'https://www.tiktok.com/@ezan_xd', initial: 'E', photo: 'images/member6.png', quote: 'Sederhana tapi berarti, itulah keluarga.' },
         { name: 'V3iin', username: '@iyainirhmd', tiktok: 'https://www.tiktok.com/@iyainirhmd', initial: 'I', photo: 'images/member7.jpg', quote: 'Tersenyumlah, karena senyuman adalah ibadah yang indah.' },
-        { name: 'Shaglen', username: '@xmj.shaglen', tiktok: 'https://www.tiktok.com/@xmj.shaglen', initial: 'X', photo: 'images/member8.jpg', quote: 'Bersama Kasugano, kita belajar dan tumbuh.' },
-        { name: 'Valen', username: '@naineyuko', tiktok: 'https://www.tiktok.com/@naineyuko', initial: 'N', photo: 'images/member9.jpg', quote: 'Anime bukan hanya tontonan, tapi juga pembelajaran hidup.' },
-        { name: 'Yuuta', username: '@yuutaxml_', tiktok: 'https://www.tiktok.com/@yuutaxml_', initial: 'Y', photo: 'images/member10.jpg', quote: 'Kita bersinar bukan karena sendiri, tapi karena bersama.' },
-        { name: 'Jarzz', username: '@jarzz.dw.skuy', tiktok: 'https://www.tiktok.com/@jarzz.dw.skuy', initial: 'J', photo: 'images/member11.jpg', quote: 'Tetap santuy tapi serius dalam berkarya.' },
-        { name: 'Qwentty', username: '@qwentty.ft', tiktok: 'https://www.tiktok.com/@qwenty.ft', initial: 'Q', photo: 'images/member12.jpg', quote: 'Preset dan filter hanyalah alat, yang utama adalah hati.' },
-        { name: 'Akira', username: '@akira.imut', tiktok: 'https://www.tiktok.com/@akiraa.imut', initial: 'A', photo: 'images/member13.jpg', quote: 'Imut boleh, tetapi skill jangan ditawar.' },
+        { name: 'Shaglen', username: '@xmj.shaglen', tiktok: 'https://www.tiktok.com/@xmj.shaglen', initial: 'X', photo: 'images/member8.jpg', quote: 'Loh heh? kok gitu' },
+        { name: 'Valen', username: '@naineyuko', tiktok: 'https://www.tiktok.com/@naineyuko', initial: 'N', photo: 'images/member9.jpg', quote: 'Aduh kok aku jadi cewek siehh' },
+        { name: 'Yuuta', username: '@yuutaxml_', tiktok: 'https://www.tiktok.com/@yuutaxml_', initial: 'Y', photo: 'images/member10.jpg', quote: 'Pahlawan selalu datang terlambat' },
+        { name: 'Jarzz', username: '@jarzz.dw.skuy', tiktok: 'https://www.tiktok.com/@jarzz.dw.skuy', initial: 'J', photo: 'images/member11.jpg', quote: 'Halah yapping doang' },
+        { name: 'Qwentty', username: '@qwentty.ft', tiktok: 'https://www.tiktok.com/@qwenty.ft', initial: 'Q', photo: 'images/member12.jpg', quote: 'Semua manusia hanyalah alat' },
+        { name: 'Akira', username: '@akira.imut', tiktok: 'https://www.tiktok.com/@akiraa.imut', initial: 'A', photo: 'images/member13.jpg', quote: 'Imut gini kalo bantai lu sabi kali' },
         { name: 'Dree', username: '@daktau_256', tiktok: 'https://www.tiktok.com/@daktau_256', initial: 'D', photo: 'images/member14.jpg', quote: 'Jangan takut salah, karena dari salah kita belajar.' },
-        { name: 'Zunda', username: '@shaglenv02y', tiktok: 'https://www.tiktok.com/@shaglenv02y', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup itu seperti game, teruslah maju dan level up!' },
-        { name: 'Yushaa Von Khaslana', username: '@kachusyaa', tiktok: 'https://www.tiktok.com/@kachusyaa?_r=1&_t=ZS-943UkIGrPbZ', initial: 'S', photo: 'images/member16.jpeg', quote: 'Hidup seperti larry!' }
+        { name: 'Zunda', username: '@shaglenv02y', tiktok: 'https://www.tiktok.com/@shaglenv02y', initial: 'S', photo: 'images/member15.jpg', quote: 'Lahhhhhh gw salah apa' },
+        { name: 'Yushaa Von Khaslana', username: '@kachusyaa', tiktok: 'https://www.tiktok.com/@kachusyaa?_r=1&_t=ZS-943UkIGrPbZ', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup seperti larry!' }
     ];
 
     const admins = [
@@ -24,17 +24,17 @@
         { name: 'Sora', username: '@kasugano_sora52', role: 'Pemilik & Pendiri', tiktok: 'https://www.tiktok.com/@kasugano.rora', initial: 'S', photo: 'images/admin2.jpg' },
         { name: 'Haruka', username: '@kasugano_harukaa', role: 'Pemilik', tiktok: 'https://www.tiktok.com/@kasugano.harukaa', initial: 'H', photo: 'images/admin3.jpg' },
         { name: 'Zero', username: '@zero.znzx', role: 'Admin', tiktok: 'https://www.tiktok.com/@zero.znzx', initial: 'Z', photo: 'images/admin4.jfif' },
-        { name: 'Serlina', username: '@diiputraa28_', role: 'Admin', tiktok: 'https://www.tiktok.com/@diiputraa28_?_r=1&_t=ZS-943fWknNM6m', initial: 'A', photo: 'images/admin5.png' },
+        { name: 'Serlina', username: '@diiputraa28_', role: 'Admin', tiktok: 'https://www.tiktok.com/@diiputraa28_?_r=1&_t=ZS-943fWknNM6m', initial: 'S', photo: 'images/admin5.jpeg' },
         { name: '???', username: '@???', role: '???', tiktok: 'https://www.tiktok.com', initial: '?', photo: 'images/admin6.png' }
     ];
 
     const contacts = [
         { platform: 'TikTok', username: '@kasugano.official', link: 'https://www.tiktok.com/@kasugano.official', icon: 'fab fa-tiktok' },
         { platform: 'TikTok', username: '@kasugano.store', link: 'https://www.tiktok.com/@kasugano.store', icon: 'fab fa-tiktok' },
-        { platform: 'Instagram', username: '@kasugano.family', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
+        { platform: 'Instagram', username: '@kasugano.keluarga', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
         { platform: 'Instagram', username: '@kasuganostore', link: 'https://www.instagram.com/kasuganostore', icon: 'fab fa-instagram' },
         { platform: 'WhatsApp', username: '+62 852-3240-6495', link: 'https://wa.me/6285232406495', icon: 'fab fa-whatsapp' },
-        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
+        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'mailto:kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
     ];
 
     // ===== ELEMENTS =====
@@ -347,7 +347,4 @@
             setActiveSection('home');
         }, 200);
     });
-
 })();
-
-
