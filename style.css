@@ -66,7 +66,7 @@ body::after {
 ::-webkit-scrollbar-track { background: #1c1326; }
 ::-webkit-scrollbar-thumb { background: #c47af0; border-radius: 10px; }
 
-/* ===== NAVBAR - TANPA BACKGROUND PIL ===== */
+/* ===== NAVBAR - TANPA INDICATOR AKTIF ===== */
 .navbar-modern {
     position: fixed;
     top: 2%;
@@ -156,9 +156,10 @@ body::after {
     color: white;
 }
 
+/* ACTIVE STATE - HANYA WARNA TEKS, TANPA BACKGROUND/INDICATOR */
 .nav-item.active .nav-link {
     color: white;
-    background: linear-gradient(135deg, rgba(180, 95, 239, 0.25), rgba(255, 105, 194, 0.25));
+    background: transparent;
 }
 
 .nav-toggle {
