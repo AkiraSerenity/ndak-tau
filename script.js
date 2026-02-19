@@ -29,12 +29,12 @@
     ];
 
     const contacts = [
-        { platform: 'TikTok', username: '@kasugano.resmi', link: 'https://www.tiktok.com/@kasugano.official', icon: 'fab fa-tiktok' },
+        { platform: 'TikTok', username: '@kasugano.official', link: 'https://www.tiktok.com/@kasugano.official', icon: 'fab fa-tiktok' },
         { platform: 'TikTok', username: '@kasugano.store', link: 'https://www.tiktok.com/@kasugano.store', icon: 'fab fa-tiktok' },
         { platform: 'Instagram', username: '@kasugano.keluarga', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
         { platform: 'Instagram', username: '@kasuganostore', link: 'https://www.instagram.com/kasuganostore', icon: 'fab fa-instagram' },
         { platform: 'WhatsApp', username: '+62 852-3240-6495', link: 'https://wa.me/6285232406495', icon: 'fab fa-whatsapp' },
-        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'mailto:kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
+        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
     ];
 
     // ===== ELEMENTS =====
@@ -349,4 +349,5 @@
     });
 
 })();
+
 
