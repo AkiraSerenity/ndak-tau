@@ -16,7 +16,7 @@
         { name: 'Akira', username: '@akira.imut', tiktok: 'https://www.tiktok.com/@akiraa.imut', initial: 'A', photo: 'images/member13.jpg', quote: 'Imut gini kalo bantai lu sabi kali' },
         { name: 'Dree', username: '@daktau_256', tiktok: 'https://www.tiktok.com/@daktau_256', initial: 'D', photo: 'images/member14.jpg', quote: 'Jangan takut salah, karena dari salah kita belajar.' },
         { name: 'Zunda', username: '@shaglenv02y', tiktok: 'https://www.tiktok.com/@shaglenv02y', initial: 'S', photo: 'images/member15.jpg', quote: 'Lahhhhhh gw salah apa' },
-        { name: 'Yushaa Von Khaslana', username: '@kachusyaa', tiktok: 'https://www.tiktok.com/@kachusyaa?_r=1&_t=ZS-943UkIGrPbZ', initial: 'S', photo: 'images/member15.jpg', quote: 'Hidup seperti larry!' }
+        { name: 'Yushaa Von Khaslana', username: '@kachusyaa', tiktok: 'https://www.tiktok.com/@kachusyaa?_r=1&_t=ZS-943UkIGrPbZ', initial: 'S', photo: 'images/member16.jpeg', quote: 'Hidup seperti larry!' }
     ];
 
     const admins = [
@@ -31,10 +31,10 @@
     const contacts = [
         { platform: 'TikTok', username: '@kasugano.official', link: 'https://www.tiktok.com/@kasugano.official', icon: 'fab fa-tiktok' },
         { platform: 'TikTok', username: '@kasugano.store', link: 'https://www.tiktok.com/@kasugano.store', icon: 'fab fa-tiktok' },
-        { platform: 'Instagram', username: '@kasugano.keluarga', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
+        { platform: 'Instagram', username: '@kasugano.family', link: 'https://www.instagram.com/kasugano.family', icon: 'fab fa-instagram' },
         { platform: 'Instagram', username: '@kasuganostore', link: 'https://www.instagram.com/kasuganostore', icon: 'fab fa-instagram' },
         { platform: 'WhatsApp', username: '+62 852-3240-6495', link: 'https://wa.me/6285232406495', icon: 'fab fa-whatsapp' },
-        { platform: 'Email', username: 'kasuganofamily@gmail.com', link: 'mailto:kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
+        { platform: 'Email', username: 'kasuganofamilyy@gmail.com', link: 'kasuganofamilyy@gmail.com', icon: 'far fa-envelope' }
     ];
 
     // ===== ELEMENTS =====
