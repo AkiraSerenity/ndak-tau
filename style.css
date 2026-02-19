@@ -70,7 +70,8 @@ body::after {
 .navbar-modern {
     position: fixed;
     top: 2%;
-    left: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
     max-width: 1000px;
     z-index: 1000;
