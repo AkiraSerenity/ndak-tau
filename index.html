@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVBAR MODERN -->
+    <!-- NAVBAR MODERN - TANPA BACKGROUND PIL -->
     <nav class="navbar-modern" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -170,10 +170,15 @@
             </div>
         </div>
 
-        <!-- CONTACT SECTION dengan CAROUSEL -->
+        <!-- CONTACT SECTION - GRID DI DESKTOP, CAROUSEL DI HP -->
         <section id="contact">
             <h2 class="section-title">kontak</h2>
-            <div class="carousel-container contact-carousel">
+            
+            <!-- Desktop Grid (muncul di layar >768px) -->
+            <div class="contact-grid-desktop" id="contactGrid"></div>
+            
+            <!-- Mobile Carousel (muncul di layar ≤768px) -->
+            <div class="carousel-container contact-carousel-mobile" id="contactCarouselMobile">
                 <button class="carousel-nav carousel-prev" id="contactPrev">
                     <i class="fas fa-chevron-left"></i>
                 </button>

@@ -66,20 +66,13 @@ body::after {
 ::-webkit-scrollbar-track { background: #1c1326; }
 ::-webkit-scrollbar-thumb { background: #c47af0; border-radius: 10px; }
 
-/* ===== NAVBAR ===== */
+/* ===== NAVBAR - TANPA BACKGROUND PIL ===== */
 .navbar-modern {
     position: fixed;
     top: 2%;
     left: 5%;
     width: 90%;
     max-width: 1000px;
-    background: rgba(20, 10, 35, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 105, 194, 0.25);
-    border-radius: 60px;
-    padding: 0.6rem 1.5rem;
-    box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
     z-index: 1000;
 }
 
@@ -87,6 +80,13 @@ body::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: rgba(20, 10, 35, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 105, 194, 0.25);
+    border-radius: 60px;
+    padding: 0.6rem 1.5rem;
+    box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
 }
 
 .nav-logo {
@@ -586,7 +586,7 @@ section:not(.revealed) {
     outline: none;
 }
 
-/* ===== CAROUSEL STYLES (untuk admin & contact) ===== */
+/* ===== CAROUSEL STYLES (untuk admin) ===== */
 .carousel-container {
     position: relative;
     margin: 2rem 0;
@@ -720,14 +720,23 @@ section:not(.revealed) {
     box-shadow: var(--shadow-pink-soft);
 }
 
-/* ===== CONTACT CAROUSEL CARDS (tanpa background, border, radius) ===== */
-.contact-carousel .carousel-track {
-    gap: 2rem;
+/* ===== CONTACT SECTION ===== */
+/* Desktop Grid (muncul di layar >768px) */
+.contact-grid-desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
 }
 
+/* Mobile Carousel (muncul di layar ≤768px) */
+.contact-carousel-mobile {
+    display: none;
+}
+
+/* Contact Cards (style yang sama untuk desktop & mobile) */
 .contact-card {
-    width: 200px;
-    flex-shrink: 0;
+    width: 100%;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -735,9 +744,8 @@ section:not(.revealed) {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     transition: all 0.2s ease;
-    /* Tanpa background, border, border-radius */
     background: transparent;
     border: none;
     border-radius: 0;
@@ -749,7 +757,7 @@ section:not(.revealed) {
 }
 
 .contact-card i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: linear-gradient(145deg, #ff9ae0, #c07aff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -758,7 +766,7 @@ section:not(.revealed) {
 }
 
 .contact-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: white;
     margin: 0;
@@ -771,6 +779,10 @@ section:not(.revealed) {
     border: none;
     padding: 0;
     word-break: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 /* ===== MODAL ===== */
@@ -1000,17 +1012,26 @@ section:not(.revealed) {
         padding: 0.5rem 0;
     }
     
-    /* Contact cards tetap tanpa background di HP */
+    /* Contact: Desktop Grid hilang, Mobile Carousel muncul */
+    .contact-grid-desktop {
+        display: none;
+    }
+    
+    .contact-carousel-mobile {
+        display: flex;
+    }
+    
+    /* Contact cards di HP */
     .contact-card {
         width: 160px;
     }
     
     .contact-card i {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .contact-card h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contact-card span {
@@ -1090,14 +1111,6 @@ section:not(.revealed) {
         height: 100px;
     }
     
-    .contact-card {
-        width: 140px;
-    }
-    
-    .contact-card i {
-        font-size: 2.2rem;
-    }
-    
     .modal-content {
         padding: 1.5rem 1.2rem;
     }
@@ -1132,18 +1145,6 @@ section:not(.revealed) {
     }
     
     .contact-card {
-        width: 120px;
-    }
-    
-    .contact-card i {
-        font-size: 2rem;
-    }
-    
-    .contact-card h3 {
-        font-size: 1rem;
-    }
-    
-    .contact-card span {
-        font-size: 0.7rem;
+        width: 140px;
     }
 }

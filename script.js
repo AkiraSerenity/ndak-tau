@@ -126,10 +126,27 @@
         adminTrack.appendChild(card);
     });
 
-    // ===== RENDER CONTACTS (CAROUSEL) =====
+    // ===== RENDER CONTACTS (DESKTOP GRID & MOBILE CAROUSEL) =====
+    const contactGrid = document.getElementById('contactGrid');
     const contactTrack = document.getElementById('contactTrack');
-    contactTrack.innerHTML = '';
     
+    // Render untuk desktop grid
+    contactGrid.innerHTML = '';
+    contacts.forEach(contact => {
+        const card = document.createElement('a');
+        card.href = contact.link;
+        card.target = '_blank';
+        card.className = 'contact-card';
+        card.innerHTML = `
+            <i class="${contact.icon}"></i>
+            <h3>${contact.platform}</h3>
+            <span>${contact.username}</span>
+        `;
+        contactGrid.appendChild(card);
+    });
+
+    // Render untuk mobile carousel
+    contactTrack.innerHTML = '';
     contacts.forEach(contact => {
         const card = document.createElement('a');
         card.href = contact.link;
@@ -153,7 +170,7 @@
         adminCarousel.scrollBy({ left: 300, behavior: 'smooth' });
     });
 
-    // Contact carousel
+    // Contact carousel (mobile only)
     const contactCarousel = document.getElementById('contactCarousel');
     document.getElementById('contactPrev').addEventListener('click', () => {
         contactCarousel.scrollBy({ left: -300, behavior: 'smooth' });
